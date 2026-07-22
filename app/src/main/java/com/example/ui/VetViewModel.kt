@@ -45,7 +45,7 @@ class VetViewModel(application: Application) : AndroidViewModel(application) {
     private val _spokenText = MutableStateFlow("")
     val spokenText: StateFlow<String> = _spokenText.asStateFlow()
 
-    private val _selectedLanguage = MutableStateFlow("Swahili") // Swahili, English, Hindi, Spanish, Hausa, French
+    private val _selectedLanguage = MutableStateFlow("Urdu") // Urdu, Punjabi, Swahili, English, Hindi, Spanish, Hausa, French, Vietnamese
     val selectedLanguage: StateFlow<String> = _selectedLanguage.asStateFlow()
 
     // Voice Parsing AI state
@@ -147,6 +147,8 @@ class VetViewModel(application: Application) : AndroidViewModel(application) {
 
     private fun getLocaleForLanguage(lang: String): String {
         return when (lang) {
+            "Urdu" -> "ur-PK"
+            "Punjabi" -> "pa-PK"
             "Swahili" -> "sw-KE"
             "Hindi" -> "hi-IN"
             "Spanish" -> "es-ES"

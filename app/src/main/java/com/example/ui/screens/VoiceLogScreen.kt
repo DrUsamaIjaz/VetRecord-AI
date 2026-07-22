@@ -83,9 +83,11 @@ fun VoiceLogScreen(
 
     var showLanguageDropdown by remember { mutableStateOf(false) }
 
-    val languages = listOf("Swahili", "English", "Hindi", "Spanish", "Hausa", "French", "Vietnamese")
+    val languages = listOf("Urdu", "Punjabi", "Swahili", "English", "Hindi", "Spanish", "Hausa", "French", "Vietnamese")
 
     val samplePrompts = listOf(
+        "Urdu" to "گائے بیلا کو ہلکا بخار ہے اور آج 10ml پینسلین دی گئی ہے، 14 دن بعد ڈیوورمر کا ٹیکہ لگانا ہے۔",
+        "Punjabi" to "ਗਾਂ ਬੇਲਾ ਨੂੰ ਹਲਕਾ ਬੁਖਾਰ ਹੈ, ਅੱਜ 10ml ਪੈਨਸਿਲਿਨ ਦਿੱਤੀ ਹੈ, 14 ਦਿਨਾਂ ਬਾਅਦ ਕੀੜਿਆਂ ਦੀ ਦਵਾਈ ਦੇਣੀ ਹੈ।",
         "Swahili" to "Ng'ombe Bella ana homa na alipewa Penicillin 10ml leo, na deworming baada ya siku 14.",
         "English" to "Dairy cow Bella has a slight fever and was given 10ml Penicillin today, schedule dewormer in 14 days.",
         "Hindi" to "गाय बेला को आज 10ml पेिसिलिन दिया और 14 दिन में टीका लगाना है।",
