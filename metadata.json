@@ -1,0 +1,6 @@
+{
+  "name": "VetRecord AI",
+  "description": "Digital livestock & pet health records with voice input, AI vaccination reminders, disease alerts, and treatment suggestions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
