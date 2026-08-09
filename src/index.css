@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
-/* THESE ARE PLACEHOLDER FOR EMPTY APP, FEEL FREE TO REPLACE WITH DESIRED DESIGN */
-
 @theme {
-  --font-sans: ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --color-text-muted: oklch(0.9015 0.0154 241.79);
-}
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-heading: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
-.bg-dotgrid-glow {
-  background-color: oklch(0.1638 0 0);
-  background-image:
-    radial-gradient(
-      circle at 50% 118%,
-      oklch(0.41 0.14 250 / 45%) 0%,
-      oklch(0.41 0.14 250 / 22%) 22%,
-      oklch(0.41 0.14 250 / 10%) 32%,
-      oklch(0.41 0.14 250 / 4%) 38%,
-      transparent 45%
-    ),
-    radial-gradient(oklch(0.41 0.14 250 / 4%) 1px, transparent 1px);
-  background-size:
-    100% 100%,
-    16px 16px;
-  background-position: center, center;
+  /* Green primary */
+  --color-primary: #2D8B4E;
+  --color-primary-hover: #23703E;
+  --color-primary-light: #E8F5EC;
+
+  /* Blue accent */
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
+  --color-accent-light: #EFF6FF;
+
+  /* Neutrals */
+  --color-background: #FFFFFF;
+  --color-foreground: #1A1A1A;
+  --color-muted: #F5F5F5;
+  --color-border: #E5E5E5;
+
+  --color-destructive: #DC2626;
+  --color-ring: #2D8B4E;
 }
